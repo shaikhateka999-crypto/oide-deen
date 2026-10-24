@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
 import "./App.css";
 
@@ -12,7 +12,24 @@ export default function Contact() {
   const [message, setMessage] = useState("");
 
   const ja = language === "ja";
+  useEffect(() => {
+    document.title = ja ? "お問い合わせ | Oide Deen" : "Contact Us | Oide Deen";
 
+    let description = document.querySelector('meta[name="description"]');
+
+    if (!description) {
+      description = document.createElement("meta");
+      description.setAttribute("name", "description");
+      document.head.appendChild(description);
+    }
+
+    description.setAttribute(
+      "content",
+      ja
+        ? "イスラームについての質問やご意見はこちらからお送りください。Oide DeenのYouTubeチャンネルやイスラームに関するお問い合わせを受け付けています。"
+        : "Contact Oide Deen with questions or feedback about Islam. Explore our YouTube channel and send us your questions or comments."
+    );
+  }, [ja]);
   return (
     <main className="contact-page">
       <header className="contact-heading">
