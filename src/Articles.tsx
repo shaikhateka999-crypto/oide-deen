@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import { Link, Routes, Route, useParams, useNavigate } from "react-router-dom";
 import "./App.css";
 
@@ -395,7 +395,27 @@ function ArticleList({ language }: { language: Language }) {
 
 function Articles() {
   const [language, setLanguage] = useState<Language>("ja");
+  useEffect(() => {
+    document.title =
+      language === "ja"
+        ? "イスラームの記事 | Oide Deen"
+        : "Articles About Islam | Oide Deen";
 
+    let description = document.querySelector('meta[name="description"]');
+
+    if (!description) {
+      description = document.createElement("meta");
+      description.setAttribute("name", "description");
+      document.head.appendChild(description);
+    }
+
+    description.setAttribute(
+      "content",
+      language === "ja"
+        ? "クルアーンの教え、イスラームの信仰、人生の目的について学びましょう。日本語と英語でイスラームの記事を紹介します。"
+        : "Explore articles about the Quran, Islamic beliefs, the purpose of life, prayer, patience, and more in Japanese and English."
+    );
+  }, [language]);
   return (
     <div className="website">
       <header className="header">
