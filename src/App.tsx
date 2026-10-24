@@ -1,5 +1,6 @@
 import { useEffect, useState } from "react";
 import Contact from "./Contact";
+import { Analytics } from "@vercel/analytics/react";
 import { Link, Routes, Route } from "react-router-dom";
 import "./App.css";
 import Articles from "./Articles";
@@ -391,12 +392,16 @@ function Home() {
 
 function App() {
   return (
-    <Routes>
-      <Route path="/" element={<Home />} />
-      <Route path="/contact" element={<Contact />} />
-      <Route path="/articles/*" element={<Articles />} />
-      <Route path="*" element={<Home />} />
-    </Routes>
+    <>
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/contact" element={<Contact />} />
+        <Route path="/articles/*" element={<Articles />} />
+        <Route path="*" element={<Home />} />
+      </Routes>
+
+      <Analytics />
+    </>
   );
 }
 
