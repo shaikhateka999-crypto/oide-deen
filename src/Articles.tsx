@@ -292,7 +292,21 @@ function ArticleDetail({ language }: { language: Language }) {
   const { articleId } = useParams();
   const navigate = useNavigate();
   const article = articles.find((item) => item.id === articleId);
+  useEffect(() => {
+    if (!article) return;
 
+    document.title = `${article.title[language]} | Oide Deen`;
+
+    let metaDescription = document.querySelector('meta[name="description"]');
+
+    if (!metaDescription) {
+      metaDescription = document.createElement("meta");
+      metaDescription.setAttribute("name", "description");
+      document.head.appendChild(metaDescription);
+    }
+
+    metaDescription.setAttribute("content", article.description[language]);
+  }, [article, language]);
   if (!article) {
     return (
       <section className="welcome">
