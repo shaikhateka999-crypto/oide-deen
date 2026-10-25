@@ -306,6 +306,17 @@ function ArticleDetail({ language }: { language: Language }) {
     }
 
     metaDescription.setAttribute("content", article.description[language]);
+    let canonical = document.querySelector(
+      'link[rel="canonical"]'
+    ) as HTMLLinkElement | null;
+
+    if (!canonical) {
+      canonical = document.createElement("link");
+      canonical.setAttribute("rel", "canonical");
+      document.head.appendChild(canonical);
+    }
+
+    canonical.href = window.location.origin + window.location.pathname;
   }, [article, language]);
   if (!article) {
     return (
