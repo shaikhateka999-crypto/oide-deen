@@ -1,5 +1,5 @@
-<?xml version="1.0" encoding="UTF-8"?>
 
+<?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
     <loc>https://oide-deen.vercel.app/</loc>
@@ -9,5 +9,29 @@
   </url>
   <url>
     <loc>https://oide-deen.vercel.app/articles</loc>
+  </url>
+  <url>
+    <loc>https://oide-deen.vercel.app/articles/purpose</loc>
+  </url>
+  <url>
+    <loc>https://oide-deen.vercel.app/articles/mercy</loc>
+  </url>
+  <url>
+    <loc>https://oide-deen.vercel.app/articles/kindness</loc>
+  </url>
+  <url>
+    <loc>https://oide-deen.vercel.app/articles/quran</loc>
+  </url>
+  <url>
+    <loc>https://oide-deen.vercel.app/articles/women</loc>
+  </url>
+  <url>
+    <loc>https://oide-deen.vercel.app/articles/prayer</loc>
+  </url>
+  <url>
+    <loc>https://oide-deen.vercel.app/articles/patience</loc>
+  </url>
+  <url>
+    <loc>https://oide-deen.vercel.app/articles/hereafter</loc>
   </url>
 </urlset>
