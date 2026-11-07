@@ -2157,3 +2157,39 @@ h1 {
     padding: 24px 18px;
   }
 }
+/* ===== Compact Mobile Navigation ===== */
+
+@media (max-width: 600px) {
+  .header {
+    padding: 8px 14px;
+    gap: 5px;
+  }
+
+  .header .logo {
+    font-size: 18px;
+    gap: 6px;
+  }
+
+  .logo-icon {
+    font-size: 21px;
+  }
+
+  .language {
+    padding: 3px;
+  }
+
+  .language button {
+    padding: 5px 8px;
+    font-size: 11px;
+  }
+
+  .navigation {
+    gap: 17px;
+    padding: 0 0 4px;
+  }
+
+  .navigation a {
+    font-size: 14px;
+    padding: 5px 0;
+  }
+}

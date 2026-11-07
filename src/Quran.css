@@ -1,0 +1,436 @@
+@import url("https://fonts.googleapis.com/css2?family=Amiri+Quran&display=swap");
+.quran-page {
+  min-height: 100vh;
+  background: #f8f8f3;
+  color: #183d32;
+  font-family: inherit;
+}
+
+.quran-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 24px 8%;
+  border-bottom: 1px solid #e5e9e2;
+}
+
+.quran-logo {
+  color: #183d32;
+  text-decoration: none;
+  font-size: 22px;
+  font-weight: 700;
+}
+
+.back-home {
+  color: #315d4d;
+  text-decoration: none;
+  font-size: 14px;
+}
+
+.quran-main {
+  max-width: 850px;
+  margin: 0 auto;
+  padding: 90px 24px;
+  text-align: center;
+}
+
+.quran-eyebrow {
+  color: #9a8051;
+  font-size: 12px;
+  letter-spacing: 3px;
+  font-weight: 600;
+}
+
+.quran-main h1 {
+  font-size: clamp(36px, 6vw, 58px);
+  margin: 20px 0;
+  color: #183d32;
+}
+
+.quran-intro {
+  max-width: 600px;
+  margin: 0 auto;
+  color: #68756d;
+  line-height: 1.9;
+}
+
+.surah-card {
+  margin: 65px auto 35px;
+  max-width: 550px;
+  padding: 45px 25px;
+  background: white;
+  border: 1px solid #e7e8dc;
+  border-radius: 12px;
+  box-shadow: 0 12px 35px rgba(24, 61, 50, 0.05);
+}
+
+.surah-number {
+  color: #a18450;
+  font-size: 12px;
+  letter-spacing: 2px;
+}
+
+.surah-card h2 {
+  font-size: 32px;
+  margin: 15px 0 5px;
+}
+
+.surah-japanese {
+  color: #77847a;
+  font-size: 15px;
+}
+
+.surah-arabic {
+  font-family: serif;
+  font-size: 38px;
+  line-height: 2;
+  margin: 30px 0;
+  color: #183d32;
+}
+
+.surah-info {
+  color: #77847a;
+  font-size: 14px;
+}
+
+.surah-button {
+  display: inline-block;
+  margin-top: 25px;
+  padding: 13px 30px;
+  background: #183d32;
+  color: white;
+  text-decoration: none;
+  border-radius: 5px;
+}
+
+.surah-button:hover {
+  background: #285b48;
+}
+
+.quran-note {
+  color: #77847a;
+  font-size: 13px;
+  line-height: 1.8;
+}
+
+.quran-footer {
+  text-align: center;
+  padding: 25px;
+  border-top: 1px solid #e5e9e2;
+  color: #77847a;
+  font-size: 13px;
+}
+
+@media (max-width: 600px) {
+  .quran-header {
+    padding: 20px;
+  }
+
+  .quran-main {
+    padding: 65px 18px;
+  }
+
+  .surah-card {
+    padding: 35px 18px;
+  }
+}
+/* Al-Fatihah reading page typography */
+
+.quran-main h1 {
+  font-size: clamp(42px, 6vw, 64px);
+}
+
+.quran-main .surah-arabic {
+  font-size: clamp(44px, 6vw, 54px);
+  line-height: 2.2;
+}
+
+.quran-main .surah-japanese {
+  font-size: 19px;
+}
+
+.quran-main .quran-intro {
+  font-size: 21px;
+  line-height: 1.9;
+}
+
+.quran-main .quran-note {
+  font-size: 15px;
+  line-height: 1.9;
+}
+
+@media (max-width: 600px) {
+  .quran-main h1 {
+    font-size: 40px;
+  }
+
+  .quran-main .surah-arabic {
+    font-size: 42px;
+  }
+}
+/* Improve readability of navigation and supporting text */
+
+.quran-logo {
+  font-size: 27px;
+}
+
+.back-home {
+  font-size: 17px;
+  font-weight: 500;
+}
+
+.quran-eyebrow {
+  font-size: 14px;
+}
+
+.quran-intro {
+  font-size: 23px;
+}
+
+.quran-note {
+  font-size: 16px;
+}
+
+.quran-footer {
+  font-size: 15px;
+}
+
+.surah-info {
+  font-size: 16px;
+}
+/* Larger and more readable text */
+
+.quran-header .quran-logo {
+  font-size: 32px;
+}
+
+.quran-header .back-home {
+  font-size: 20px;
+  font-weight: 600;
+}
+
+.quran-main .quran-eyebrow {
+  font-size: 16px;
+}
+
+.quran-main .surah-japanese {
+  font-size: 28px;
+  font-weight: 600;
+  margin-top: 15px;
+}
+
+.quran-main .surah-arabic {
+  font-size: 56px;
+}
+
+.quran-main .quran-intro {
+  font-size: 26px;
+}
+
+.quran-main .quran-note {
+  font-size: 18px;
+}
+
+.quran-footer {
+  font-size: 17px;
+}
+
+@media (max-width: 600px) {
+  .quran-header .quran-logo {
+    font-size: 25px;
+  }
+
+  .quran-header .back-home {
+    font-size: 16px;
+  }
+
+  .quran-main .surah-japanese {
+    font-size: 24px;
+  }
+
+  .quran-main .surah-arabic {
+    font-size: 44px;
+  }
+
+  .quran-main .quran-intro {
+    font-size: 22px;
+  }
+}
+/* Extra large typography */
+
+.quran-header .quran-logo {
+  font-size: 36px;
+}
+
+.quran-header .back-home {
+  font-size: 23px;
+  font-weight: 600;
+}
+
+.quran-main .quran-eyebrow {
+  font-size: 18px;
+}
+
+.quran-main .surah-japanese {
+  font-size: 34px;
+  font-weight: 700;
+}
+
+.quran-main .quran-intro {
+  font-size: 30px;
+}
+
+.quran-main .quran-note {
+  font-size: 21px;
+}
+
+.quran-footer {
+  font-size: 19px;
+}
+
+@media (max-width: 600px) {
+  .quran-header .quran-logo {
+    font-size: 27px;
+  }
+
+  .quran-header .back-home {
+    font-size: 18px;
+  }
+
+  .quran-main .surah-japanese {
+    font-size: 29px;
+  }
+
+  .quran-main .quran-intro {
+    font-size: 25px;
+  }
+
+  .quran-main .quran-note {
+    font-size: 18px;
+  }
+}
+
+/* Surah reading layout - improved spacing */
+
+.verses-list {
+  margin-top: 45px;
+  width: 100%;
+}
+
+.verse {
+  padding: 38px 0 42px;
+  margin-bottom: 12px;
+  border-bottom: 1px solid rgba(100, 130, 100, 0.25);
+}
+
+.verse-number {
+  font-size: 17px;
+  font-weight: 600;
+  color: #63836b;
+  margin-bottom: 28px;
+}
+
+.verse-arabic {
+  font-size: 42px;
+  line-height: 2.1;
+  text-align: center;
+  direction: rtl;
+  margin: 0 auto 30px;
+  color: #183f2b;
+}
+
+.verse-english {
+  font-size: 21px;
+  line-height: 1.9;
+  text-align: center;
+  max-width: 850px;
+  margin: 0 auto 22px;
+  color: #303a32;
+}
+
+.verse-japanese {
+  font-size: 20px;
+  line-height: 2;
+  text-align: center;
+  max-width: 850px;
+  margin: 0 auto 20px;
+  color: #405447;
+}
+
+.verse-footnotes {
+  max-width: 850px;
+  margin: 18px auto 0;
+  padding: 14px 18px;
+  background: rgba(100, 130, 100, 0.07);
+  border-radius: 10px;
+  font-size: 15px;
+  line-height: 1.9;
+}
+
+.verse-footnotes summary {
+  cursor: pointer;
+  font-weight: 600;
+  color: #42664b;
+}
+
+.verse-footnotes p {
+  margin-top: 14px;
+  white-space: pre-line;
+}
+
+@media (max-width: 600px) {
+  .verse {
+    padding: 28px 0 32px;
+  }
+
+  .verse-arabic {
+    font-size: 32px;
+    line-height: 2;
+  }
+
+  .verse-english {
+    font-size: 18px;
+    line-height: 1.8;
+  }
+
+  .verse-japanese {
+    font-size: 17px;
+    line-height: 1.9;
+  }
+
+  .verse-footnotes {
+    font-size: 14px;
+  }
+}
+/* Improved Qur'an reading typography */
+
+.verse-arabic {
+  font-family: "Amiri Quran", serif;
+  font-size: 48px;
+  line-height: 2.2;
+  font-weight: 400;
+}
+
+.verse-english {
+  font-size: 24px;
+  line-height: 2;
+}
+
+.verse-japanese {
+  font-size: 23px;
+  line-height: 2;
+}
+
+@media (max-width: 600px) {
+  .verse-arabic {
+    font-size: 38px;
+  }
+
+  .verse-english {
+    font-size: 20px;
+  }
+
+  .verse-japanese {
+    font-size: 19px;
+  }
+}

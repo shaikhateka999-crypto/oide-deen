@@ -2,9 +2,11 @@ import { useEffect, useState } from "react";
 import Contact from "./Contact";
 import { Analytics } from "@vercel/analytics/react";
 import { Link, Routes, Route } from "react-router-dom";
+
 import "./App.css";
 import Articles from "./Articles";
-
+import Quran from "./Quran";
+import AlFatihah from "./AlFatihah";
 type Language = "ja" | "en";
 
 const content = {
@@ -272,6 +274,7 @@ function Home() {
           <a href="#about">{text.nav[1]}</a>
 
           <Link to="/articles">{text.nav[2]}</Link>
+          <Link to="/quran">{language === "ja" ? "クルアーン" : "Qur'an"}</Link>
           <Link to="/contact">
             {language === "ja" ? "お問い合わせ" : "Contact"}
           </Link>
@@ -397,6 +400,8 @@ function App() {
         <Route path="/" element={<Home />} />
         <Route path="/contact" element={<Contact />} />
         <Route path="/articles/*" element={<Articles />} />
+        <Route path="/quran/*" element={<Quran />} />
+        <Route path="/quran/al-fatihah" element={<AlFatihah />} />
         <Route path="*" element={<Home />} />
       </Routes>
 
